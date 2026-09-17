@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Harmony Instruments Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Rams Instruments Logo" class="logo-image">
+                <h1>Rams Instruments</h1>
+                <p class="tagline">Play, Create, Inspire</p>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <!-- Page title section -->
+        <section class="page-header">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Get in touch with Harmony Instruments. We're here to help!</p>
+            </div>
+        </section>
+
+        <!-- Contact information section -->
+        <section class="contact-info-section">
+            <div class="container">
+                <h2 class="section-title">Our Contact Information</h2>
+                
+                <div class="contact-methods">
+                    <!-- Phone contact -->
+                    <div class="contact-method">
+                        <h3>📞 Phone</h3>
+                        <p>Main Line: <strong>+27 11 555 0123</strong></p>
+                        <p>Mobile: <strong>+27 82 555 0456</strong></p>
+                        <p>Hours: Monday - Friday, 9:00 AM - 6:00 PM</p>
+                        <p>Saturday: 10:00 AM - 4:00 PM</p>
+                    </div>
+
+                    <!-- Email contact -->
+                    <div class="contact-method">
+                        <h3>📧 Email</h3>
+                        <p>General Enquiries: <strong>info@harmonyinstruments.co.za</strong></p>
+                        <p>Sales: <strong>sales@harmonyinstruments.co.za</strong></p>
+                        <p>Support: <strong>support@harmonyinstruments.co.za</strong></p>
+                        <p>Response Time: Within 24 hours</p>
+                    </div>
+
+                    <!-- WhatsApp contact -->
+                    <div class="contact-method">
+                        <h3>💬 WhatsApp</h3>
+                        <p>Quick Support: <strong>+27 82 555 0456</strong></p>
+                        <p>Available: Monday - Saturday</p>
+                        <p>9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Store locations section -->
+        <section class="locations-section">
+            <div class="container">
+                <h2 class="section-title">Store Locations</h2>
+                <p class="section-intro">Visit one of our stores to see and try our instruments before you buy.</p>
+
+                <div class="locations-grid">
+                    <!-- Location 1: Johannesburg -->
+                    <div class="location-card">
+                        <h3>📍 Johannesburg (Main Store)</h3>
+                        <p class="location-address">
+                            123 Music Street<br>
+                            Rosebank, Johannesburg<br>
+                            Gauteng 2196, South Africa
+                        </p>
+                        <p class="location-phone">Phone: +27 11 555 0123</p>
+                        <p class="location-hours">
+                            <strong>Hours:</strong><br>
+                            Mon - Fri: 9:00 AM - 6:00 PM<br>
+                            Sat: 10:00 AM - 4:00 PM<br>
+                            Sunday: Closed
+                        </p>
+                        <p class="location-info">Parking available | Wheelchair accessible</p>
+                    </div>
+
+                    <!-- Location 2: Cape Town -->
+                    <div class="location-card">
+                        <h3>📍 Cape Town Store</h3>
+                        <p class="location-address">
+                            456 Melody Avenue<br>
+                            Claremont, Cape Town<br>
+                            Western Cape 7708, South Africa
+                        </p>
+                        <p class="location-phone">Phone: +27 21 555 1234</p>
+                        <p class="location-hours">
+                            <strong>Hours:</strong><br>
+                            Mon - Fri: 9:30 AM - 5:30 PM<br>
+                            Sat: 10:00 AM - 3:00 PM<br>
+                            Sunday: Closed
+                        </p>
+                        <p class="location-info">Street parking | Accessible entrance</p>
+                    </div>
+
+                    <!-- Location 3: Durban -->
+                    <div class="location-card">
+                        <h3>📍 Durban Store</h3>
+                        <p class="location-address">
+                            789 Harmony Lane<br>
+                            Morningside, Durban<br>
+                            KwaZulu-Natal 4001, South Africa
+                        </p>
+                        <p class="location-phone">Phone: +27 31 555 5678</p>
+                        <p class="location-hours">
+                            <strong>Hours:</strong><br>
+                            Mon - Fri: 9:00 AM - 5:00 PM<br>
+                            Sat: 10:00 AM - 3:00 PM<br>
+                            Sunday: Closed
+                        </p>
+                        <p class="location-info">Parking available | Full accessibility</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact form section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <h2 class="section-title">Send Us a Message</h2>
+                <div class="form-container">
+                    <!-- Contact form -->
+                    <form class="contact-form" name="contactForm" onsubmit="return validateContactForm()">
+                        
+                        <!-- Personal details -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">Full Name *</label>
+                                <input 
+                                    type="text" 
+                                    id="contact-name" 
+                                    name="name" 
+                                    placeholder="Your full name" 
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-email">Email Address *</label>
+                                <input 
+                                    type="email" 
+                                    id="contact-email" 
+                                    name="email" 
+                                    placeholder="Your email" 
+                                    required>
+                            </div>
+                        </div>
+
+                        <!-- Contact details -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-phone">Phone Number *</label>
+                                <input 
+                                    type="tel" 
+                                    id="contact-phone" 
+                                    name="phone" 
+                                    placeholder="Your phone number" 
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <input 
+                                    type="text" 
+                                    id="subject" 
+                                    name="subject" 
+                                    placeholder="Message subject" 
+                                    required>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="form-group">
+                            <label for="contact-message">Message *</label>
+                            <textarea 
+                                id="contact-message" 
+                                name="message" 
+                                placeholder="Your message here..." 
+                                rows="6" 
+                                required></textarea>
+                        </div>
+
+                        <!-- Checkbox for newsletter -->
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" name="newsletter" value="yes">
+                                Subscribe to our newsletter for news and special offers
+                            </label>
+                        </div>
+
+                        <!-- Form actions -->
+                        <div class="form-actions">
+                            <button type="submit" class="submit-btn">Send Message</button>
+                            <button type="reset" class="reset-btn">Clear Form</button>
+                        </div>
+
+                        <p class="required-note">* Indicates required field</p>
+                    </form>
+
+                    <!-- Success message (hidden by default) -->
+                    <div id="contactSuccessMessage" class="success-message" style="display: none;">
+                        <h3>Message Sent Successfully!</h3>
+                        <p>Thank you for contacting us. We will respond to your message within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map section -->
+        <section class="map-section">
+            <div class="container">
+                <h2 class="section-title">Find Us On The Map</h2>
+                <p class="section-intro">Main Store Location - Johannesburg</p>
+                <div class="map-container">
+                    <!-- Embedded map placeholder -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.7389123456!2d28.0500!3d-26.1300!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h4>Do you offer instrument rentals?</h4>
+                        <p>Yes, we offer rental options for most instruments. Contact us for pricing and availability.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Do you provide repair services?</h4>
+                        <p>Yes, we have experienced technicians who can repair and service most instruments.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>What is your return policy?</h4>
+                        <p>We offer 30-day returns on most items if in original condition. See website for full details.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Do you offer delivery?</h4>
+                        <p>Yes, we offer nationwide delivery. Shipping costs depend on location and item size.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Harmony Instruments has been serving musicians since 2010, providing quality instruments and exceptional service.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@harmonyinstruments.co.za</p>
+                    <p>Phone: +27 11 555 0123</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Harmony Instruments Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

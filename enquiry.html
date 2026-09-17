@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Form - Harmony Instruments Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Rams Instruments Logo" class="logo-image">
+                <h1>Rams Instruments</h1>
+                <p class="tagline">Play, Create, Inspire</p>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="enquiry.html" class="active">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <!-- Page title section -->
+        <section class="page-header">
+            <div class="container">
+                <h2>Product & Service Enquiry</h2>
+                <p>Have questions about our products or services? Fill out the form below and we'll get back to you promptly.</p>
+            </div>
+        </section>
+
+        <!-- Enquiry form section -->
+        <section class="enquiry-section">
+            <div class="container">
+                <div class="form-container">
+                    <h2 class="section-title">Send Us Your Enquiry</h2>
+                    <!-- Main enquiry form -->
+                    <form class="enquiry-form" name="enquiryForm" onsubmit="return validateForm()">
+                        
+                        <!-- Personal Information -->
+                        <fieldset>
+                            <legend>Personal Information</legend>
+                            
+                            <!-- Full name field -->
+                            <div class="form-group">
+                                <label for="fullname">Full Name *</label>
+                                <input 
+                                    type="text" 
+                                    id="fullname" 
+                                    name="fullname" 
+                                    placeholder="Enter your full name" 
+                                    required>
+                            </div>
+
+                            <!-- Email field -->
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    placeholder="Enter your email address" 
+                                    required>
+                            </div>
+
+                            <!-- Phone number field -->
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input 
+                                    type="tel" 
+                                    id="phone" 
+                                    name="phone" 
+                                    placeholder="Enter your phone number" 
+                                    required>
+                            </div>
+                        </fieldset>
+
+                        <!-- Enquiry Details -->
+                        <fieldset>
+                            <legend>Enquiry Details</legend>
+                            
+                            <!-- Product/Service selection -->
+                            <div class="form-group">
+                                <label for="product">What are you enquiring about? *</label>
+                                <select id="product" name="product" required>
+                                    <option value="">-- Select an option --</option>
+                                    <option value="acoustic-guitar">Acoustic Guitars</option>
+                                    <option value="electric-guitar">Electric Guitars</option>
+                                    <option value="keyboard">Digital Keyboards</option>
+                                    <option value="drums">Drum Sets</option>
+                                    <option value="violin">Violins</option>
+                                    <option value="wind">Wind Instruments</option>
+                                    <option value="accessories">Accessories</option>
+                                    <option value="repairs">Repair Services</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <!-- Enquiry type -->
+                            <div class="form-group">
+                                <label for="enquiry-type">Type of Enquiry *</label>
+                                <select id="enquiry-type" name="enquiry-type" required>
+                                    <option value="">-- Select type --</option>
+                                    <option value="product-info">Product Information</option>
+                                    <option value="pricing">Pricing & Availability</option>
+                                    <option value="rental">Rental Information</option>
+                                    <option value="repair">Repair & Maintenance</option>
+                                    <option value="lesson">Music Lessons</option>
+                                    <option value="wholesale">Wholesale Inquiry</option>
+                                </select>
+                            </div>
+
+                            <!-- Enquiry message -->
+                            <div class="form-group">
+                                <label for="message">Your Enquiry/Message *</label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    placeholder="Please provide details about your enquiry..." 
+                                    rows="6" 
+                                    required></textarea>
+                            </div>
+                        </fieldset>
+
+                        <!-- Additional Information -->
+                        <fieldset>
+                            <legend>Additional Information</legend>
+                            
+                            <!-- Budget range -->
+                            <div class="form-group">
+                                <label for="budget">Budget Range (if applicable)</label>
+                                <select id="budget" name="budget">
+                                    <option value="">-- Select budget --</option>
+                                    <option value="below-1000">Below R1,000</option>
+                                    <option value="1000-5000">R1,000 - R5,000</option>
+                                    <option value="5000-10000">R5,000 - R10,000</option>
+                                    <option value="above-10000">Above R10,000</option>
+                                </select>
+                            </div>
+
+                            <!-- Experience level -->
+                            <div class="form-group">
+                                <label for="experience">Musical Experience Level</label>
+                                <select id="experience" name="experience">
+                                    <option value="">-- Select level --</option>
+                                    <option value="beginner">Beginner</option>
+                                    <option value="intermediate">Intermediate</option>
+                                    <option value="advanced">Advanced</option>
+                                    <option value="professional">Professional</option>
+                                </select>
+                            </div>
+
+                            <!-- Preferred contact method -->
+                            <div class="form-group">
+                                <label>Preferred Contact Method</label>
+                                <div class="radio-group">
+                                    <label>
+                                        <input type="radio" name="contact-method" value="email" checked> Email
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="contact-method" value="phone"> Phone
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="contact-method" value="whatsapp"> WhatsApp
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Checkbox for additional offers -->
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" name="subscribe" value="yes">
+                                    Keep me updated about new products and special offers
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <!-- Form actions -->
+                        <div class="form-actions">
+                            <button type="submit" class="submit-btn">Send Enquiry</button>
+                            <button type="reset" class="reset-btn">Clear Form</button>
+                        </div>
+
+                        <!-- Required fields note -->
+                        <p class="required-note">* Indicates required field</p>
+                    </form>
+
+                    <!-- Confirmation message (hidden by default) -->
+                    <div id="successMessage" class="success-message" style="display: none;">
+                        <h3>Thank You!</h3>
+                        <p>Your enquiry has been submitted successfully. We will get back to you within 24 hours.</p>
+                        <p>Reference Number: <span id="refNumber"></span></p>
+                    </div>
+                </div>
+
+                <!-- Additional information box -->
+                <div class="info-box">
+                    <h3>Quick Response Times</h3>
+                    <p>We typically respond to enquiries within <strong>24 hours</strong> during business hours.</p>
+                    <p>For urgent matters, please call us directly at <strong>+27 11 555 0123</strong></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Harmony Instruments has been serving musicians since 2010, providing quality instruments and exceptional service.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@harmonyinstruments.co.za</p>
+                    <p>Phone: +27 11 555 0123</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Harmony Instruments Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
