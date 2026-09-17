@@ -1,17 +1,16 @@
-# Harmony Instruments Store - Website Project
+# Rams Instruments Store - Website Project
 
 ## Project Title
-Harmony Instruments Store - Premium Musical Instruments & Accessories
+Rams Instruments Store - Premium Musical Instruments & Accessories
 
 ## Project Overview
 This is a complete e-commerce website for an online musical instruments and accessories retail store. The website showcases various musical instruments including guitars, keyboards, drums, violins, and wind instruments, along with a comprehensive range of accessories. The project demonstrates proficiency in HTML structure, CSS styling, and JavaScript functionality.
 
 ## Student Information
-- **Student Name:** [Student Name]
-- **Student Number:** [Student Number]
-- **Group:** [Group Name/Number - if applicable]
-- **Subject Code:** [Subject Code]
-- **Date Submitted:** August 2026
+- **Student Name:** [Ramakholwana Ankhodisaho]
+- **Student Number:** [St10511555]
+  - **Subject Code:** [WEDE5020]
+- **Date Submitted:** 17 SEPTEMBER 2026
 
 ## Website Goals and Objectives
 
